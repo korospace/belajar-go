@@ -1,0 +1,7 @@
+1- create file name with sufix _test.go
+
+    ex: greetings_test.go
+
+2- create function for testing with prefix testing
+
+    ex: func TestHelloName( )

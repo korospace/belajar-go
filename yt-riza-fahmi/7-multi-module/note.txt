@@ -1,0 +1,30 @@
+============
+GO WORKSPACE
+*with go workspace, you dont neet use "go mod edit -replace example.com/greetings=../greetings"
+===============================================================================================
+
+1- create module in workspace folder
+
+    $ mkdir workspace
+
+    $ cd workspace
+
+    $ mkdir hello
+
+    $ cd hello
+
+    $ go mod init example.com/hello
+
+    $ touch hello.go
+
+2- how to run hello.go from workspace
+
+    $ cd workspace
+
+    $ go work init ./hello
+
+        *if you want to add another module, use this command:
+
+            $ go work use ./example
+
+    $ go run example.com/hello

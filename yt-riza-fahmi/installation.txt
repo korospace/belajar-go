@@ -1,0 +1,9 @@
+1. Open docs installation
+
+    https://go.dev/doc/install
+
+2. How to open bashrc
+
+    sudo nano ~/.bashrc
+
+3. sudo apt-get install g++

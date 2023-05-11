@@ -1,0 +1,8 @@
+1- cd /to/your/go-main-file/path
+
+    run: go build
+
+2- run go file executable
+   *if your file is hello.go, so the executable is hello
+
+   ./hello

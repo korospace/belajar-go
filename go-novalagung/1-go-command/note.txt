@@ -1,0 +1,33 @@
+1. go mod init <project-name>
+
+  "digunakan untuk inisialisasi project pada Go"
+
+    1- mkdir hello-world
+    2- cd hello-world
+    3- go mod init hello-world
+
+2. go run <filename>.go
+
+  "digunakan untuk eksekusi file program (file ber-ekstensi .go). Hanya bisa dilakukan pada file dengan package main saja"
+
+  go run main.go
+
+3. go build -o <file-name>
+
+  "command ini menghasilkan file executable atau binary pada folder yang sedang aktif"
+
+  go build -o hello-mf
+
+4. go get <packageurl>
+
+  "digunakan untuk men-download package"
+
+  go get github.com/segmentio/kafka-go
+
+  "untuk update package tambahkan parameter -u"
+
+  go get -u github.com/segmentio/kafka-go
+
+5. go mod tidy
+
+  "melakukan validasi package. jika ada nama package yang diimport namun belum terdownload maka akan didownload"

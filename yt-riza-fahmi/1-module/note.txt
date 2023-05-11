@@ -1,0 +1,44 @@
+How to create internal module
+=============================
+1- create folder
+
+    example: mkdir greetings
+
+2- run 'go mod init'
+
+    example: go mod init example.com/greetings
+
+3- package name must same with file name
+
+
+How to import module from another module
+========================================
+1- import module
+
+    example: import "example.com/greetings"
+
+2- if the imported module is locally, run the command bellow
+
+    go mod edit -replace example.com/greetings=../greetings    
+
+3- run 'go mod tidy'
+
+
+How to use external module
+==========================
+
+1- Search available module
+
+    open https://pkg.go.dev/
+
+2- do import
+
+    example: import "github.com/bxcodec/faker/v4
+
+3- run the command below
+
+    go mod tidy (like 'npm i')
+
+    or
+
+    go get package-name (like npm i package-name)
